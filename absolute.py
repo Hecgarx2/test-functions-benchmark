@@ -7,8 +7,8 @@ def absolute(x, y):
     return abs(x) + abs(y)
 
 # Generar datos para graficar
-x = np.linspace(-5, 5, 50)
-y = np.linspace(-5, 5, 50)
+x = np.linspace(-5.12, 5.12, 50)
+y = np.linspace(-5.12, 5.12, 50)
 X, Y = np.meshgrid(x, y)
 Z = absolute(X, Y)
 

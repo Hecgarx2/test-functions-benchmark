@@ -7,8 +7,8 @@ def step(x, y):
     return x + y
 
 # Generar datos para graficar
-x = np.linspace(-5, 5, 50, dtype='int')
-y = np.linspace(-5, 5, 50, dtype='int')  #step function solo toma valores enteros para cada coordenada
+x = np.linspace(-5.12, 5.12, 50, dtype='int')
+y = np.linspace(-5.12, 5.12, 50, dtype='int')  #step function solo toma valores enteros para cada coordenada
 X, Y = np.meshgrid(x, y)
 Z = step(X, Y)
 

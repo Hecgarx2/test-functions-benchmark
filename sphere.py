@@ -7,8 +7,8 @@ def sphere(x, y):
     return x**2 + y**2
 
 # Generar datos para graficar
-x = np.linspace(-5, 5, 50)
-y = np.linspace(-5, 5, 50)
+x = np.linspace(-5.12, 5.12, 50)
+y = np.linspace(-5.12, 5.12, 50)
 X, Y = np.meshgrid(x, y)
 Z = sphere(X, Y)
 
