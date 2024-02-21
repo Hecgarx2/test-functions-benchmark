@@ -11,11 +11,10 @@ def weierstrass_2d(x, y, a, b, terms):
     return result
 
 # Generar datos para graficar
-x = np.linspace(-5, 5, 100)
-y = np.linspace(-5, 5, 100)
+x = np.linspace(-5.12, 5.12, 100)
+y = np.linspace(-5.12, 5.12, 100)
 X, Y = np.meshgrid(x, y)
-Z = weierstrass_2d(X, Y, a=0.5, b=0.5, terms=50)  # Ajusta los parámetros "a" y "b" según tus necesidades
-
+Z = weierstrass_2d(X, Y, a=0.5, b=0.5, terms=50) 
 # Graficar la función
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
@@ -25,6 +24,6 @@ ax.plot_surface(X, Y, Z, cmap='viridis')
 ax.set_xlabel('X')
 ax.set_ylabel('Y')
 ax.set_zlabel('Z')
-ax.set_title('Función de Weierstrass en 3D')
+ax.set_title('Función de Weierstrass')
 
 plt.show()

@@ -4,11 +4,11 @@ from mpl_toolkits.mplot3d import Axes3D
 
 # Definir la step function
 def step(x, y):
-    return x + y
+    return ((np.floor(x + 0.5))**2) + ((np.floor(y + 0.5))**2)
 
 # Generar datos para graficar
-x = np.linspace(-5.12, 5.12, 50, dtype='int')
-y = np.linspace(-5.12, 5.12, 50, dtype='int')  #step function solo toma valores enteros para cada coordenada
+x = np.linspace(-5.12, 5.12, 50)
+y = np.linspace(-5.12, 5.12, 50)  
 X, Y = np.meshgrid(x, y)
 Z = step(X, Y)
 
